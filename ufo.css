@@ -1,0 +1,98 @@
+
+
+.building-flames path{
+    fill: orange;
+    animation: flames 2s ease-in-out infinite;
+    transform-origin: 50% 50%;
+    transform-box:fill-box;
+}
+
+.ufo-big-body{
+    fill:rgb(33, 83, 165);
+}
+
+.ufo-small-body {
+    fill: #00acee;
+    animation: smallufo 4s ease-in-out infinite;
+}
+
+.building {
+    fill: #ce2029;
+    animation: building 3s ease-in-out infinite;
+}
+
+
+@keyframes building {
+    50%{
+        transform:translateY(20px);
+    }
+
+    /* 75% {
+        transform: translateY();
+    } */
+}
+
+.ufo-big {
+    animation: medufo 2s ease-in-out infinite;
+}
+
+.ufo-big-lights-light {
+    animation: light 2s ease-in-out infinite; 
+}
+
+.ufo-big-lights-light--1 {
+    animation-delay: .2s;
+    fill: #FF3900;
+}
+
+.ufo-big-lights-light--2 {
+    animation-delay: .4s;
+    fill: blue;
+}
+.ufo-big-lights-light--3 {
+    animation-delay: .6s;
+    fill: pink;
+}
+.ufo-big-lights-light--4 {
+    animation-delay: .8s;
+    fill: red;
+}
+.ufo-big-lights-light--5 {
+    fill: purple;
+}
+
+
+@keyframes flames {
+    50% {
+        transform: translateY(20px) scale( 0.5);
+    }
+    100% {
+        transition: 3s;
+        opacity: 0;
+    }
+}
+
+@keyframes light {
+    20% {
+        fill: inherit;
+    }
+
+    100% {
+        fill: #000;
+    }
+}
+
+
+@keyframes medufo {
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+
+@keyframes smallufo {
+    50% {
+        transform: translateY(20px);
+    }
+}
+

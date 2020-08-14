@@ -1,0 +1,22 @@
+.arrow {
+    display: none;
+}
+
+.button {
+    background-color:red;
+    stroke-dasharray: 56;
+    stroke-dashoffset: 56;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tick {
+    animation: button .5s ease forwards;
+    animation-delay: .3s ;
+}
+
+@keyframes button {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
